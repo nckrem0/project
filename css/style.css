@@ -37,8 +37,20 @@
     box-shadow: 0px 0px 20px 4px rgb(0, 0, 0, 0.1) ;
     /* z-index: 99;
     position: relative; */
+    
 }
-
+/* .standard__top {
+    position: absolute;
+    width: auto;
+    height: 200px;
+    top: -100px;
+}
+.standard__bottom{
+    position: absolute;
+    bottom: 50px;
+    left: 43%;
+    background-color: red;
+} */
 
 .packages__content h3 {
     font-size: 25px;
@@ -121,6 +133,44 @@
     background-image: url(../project/img/banner2.jpg);
 }
 
+.video__test {
+    position: relative;
+}
+.video__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.video__content i {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    cursor: pointer;
+    color: #ffffff;
+}
+.play__button {
+    height:70px;
+    position:absolute;
+    width:70px;
+    left:50%;
+    margin-left:-25px;
+    top: 60%;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    color: #189A46;
+    font-size: 20px;
+}
+
+
 
 /* testimonials */
 .testimonials {
@@ -154,7 +204,7 @@
 
 .test {
     display: flex;
-    text-align: center;
+    text-align: start;
 }
 
 .testi-des {
@@ -165,6 +215,19 @@
     width: 70px;
     height: 70px;
     border-radius: 100%;
+    margin-right: 30px;
+}
+.actor h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.actor p{
+    color: #777;
+    font-size: 17px;
+    font-style: normal;
+    text-align: left;
+    opacity: 0.8;
 }
 
 .carousel__content {
@@ -173,9 +236,6 @@
     margin-right: 40px;
     margin-bottom: 80px;
 }
-.carousel-indicators {
-    margin-right: 100;
-}
 
 .carousel-indicators li {
     border-radius: 25px;
@@ -183,7 +243,7 @@
     width: 10px;
     border: none;
     background-color: #696969;
-    margin-top: 200px;
+    margin-left: 10px;
 }
 .carousel-indicators li.active{
     width: 30px;
@@ -194,6 +254,40 @@
     background-color: #189A46;
     opacity: 1;
     transition: 0s;
+}
+
+.carousel__content blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+ 
+.carousel__content blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+    color: #189A46;
+}
+ 
+.carousel__content blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+ 
+.carousel__content blockquote cite:before {
+    content: "\2014 \2009";
 }
 
 
